@@ -2,7 +2,7 @@
   <f7-page>
     <f7-navbar back-link="Back" title="Preloader" sliding></f7-navbar>
 
-    <f7-block-title>Preloader</f7-block-title>
+    <f7-block-title>预加载</f7-block-title>
     <f7-block inner>
       <p>
         <f7-grid>
