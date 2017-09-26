@@ -55,7 +55,7 @@ import TabbarTab3 from './pages/nested-routes/tabs/tabbar-tab3.vue'
 import TabbarTab3AlternateContent from './pages/nested-routes/tabs/tabbar-tab3-alternate-content.vue'
 //新添加
 import Popup from './pages/popup.vue'
-
+import Popuplogin from './pages/popup-login.vue'
 import Test from './pages/test.vue';
 
 
@@ -68,8 +68,11 @@ export default [{
         component: Test
     },
     {
-        path: '/popup',
+        path: '/popup/',
         component: Popup
+    }, {
+        path: '/popup-login/',
+        component: Popuplogin
     },
     {
         path: '/content-block/',

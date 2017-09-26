@@ -57,6 +57,7 @@
   <f7-list>
  
       <f7-list-item title="测试" link="/test/"></f7-list-item>
+      <f7-list-item title="弹出登录" link="/popup-login/"></f7-list-item>
       <f7-list-item title="弹出层" link="/popup/"></f7-list-item>
     </f7-list>
 

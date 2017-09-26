@@ -1,15 +1,24 @@
 <template>
   <f7-page tabbar-fixed>
-    <f7-navbar back-link="Back" title="默认打开登录" sliding></f7-navbar>
+    <f7-navbar back-link="Back" title="弹出登录" sliding></f7-navbar>
 
     <p>
       <a href="#" data-popup=".popup-login" class="open-popup">登录 </a>
     </p>
     
- 
+
+    <!-- Popup
+    <f7-popup class="popup-page" popup:open>
+   
+      呜呜呜呜,测试内容
+      <a href="#" data-popup=".popup-page" class="close-popup">关闭 </a>
+
+    </f7-popup> -->
+
+
 
 <!-- Login Screen -->
-<f7-login-screen class="popup-login" opened tablet-fullscreen>
+<f7-login-screen class="popup-login">
   <!-- Login Screen content goes here -->
 
  <f7-view>
@@ -48,14 +57,6 @@
 
 
 export default {
-   data: function () {
-      return {
-        login: 'flase'
-       
-      }
-      
-      }
-
 
 }
 
