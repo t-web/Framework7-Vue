@@ -66,8 +66,9 @@ export default [{
     {
         path: '/test/',
         component: Test
-    }, {
-        path: '/popup'
+    },
+    {
+        path: '/popup',
         component: Popup
     },
     {
@@ -290,6 +291,4 @@ export default [{
             }
         ]
     }
-];
-}
 ];
