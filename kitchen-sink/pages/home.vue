@@ -54,6 +54,11 @@
       <f7-list-item title="嵌套路由" link="/nested-routes/"></f7-list-item>
       <f7-list-item title="数据绑定" link="/data-binding/"></f7-list-item>
     </f7-list>
+  <f7-list>
+ 
+      <f7-list-item title="测试" link="/test/"></f7-list-item>
+    </f7-list>
+
   </f7-page>
 </template>
 <script>

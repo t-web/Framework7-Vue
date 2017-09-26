@@ -43,8 +43,8 @@ import DataBinding from './pages/data-binding.vue';
 import DataBindingEdit from './pages/data-binding-edit.vue';
 
 import NestedRoutes from './pages/nested-routes.vue';
-import NestedRoutesTabs from'./pages/nested-routes-tabs.vue';
-import NestedRoutesTabbar from'./pages/nested-routes-tabbar.vue';
+import NestedRoutesTabs from './pages/nested-routes-tabs.vue';
+import NestedRoutesTabbar from './pages/nested-routes-tabbar.vue';
 import Tab1 from './pages/nested-routes/tabs/tab1.vue'
 import Tab2 from './pages/nested-routes/tabs/tab2.vue'
 import Tab3 from './pages/nested-routes/tabs/tab3.vue'
@@ -53,234 +53,236 @@ import TabbarTab1 from './pages/nested-routes/tabs/tabbar-tab1.vue'
 import TabbarTab2 from './pages/nested-routes/tabs/tabbar-tab2.vue'
 import TabbarTab3 from './pages/nested-routes/tabs/tabbar-tab3.vue'
 import TabbarTab3AlternateContent from './pages/nested-routes/tabs/tabbar-tab3-alternate-content.vue'
+//新添加
+import Test from './pages/test.vue';
 
-export default [
-  {
-    path: '/home/',
-    component: Home
-  },
-  {
-    path: '/content-block/',
-    component: ContentBlock
-  },
-  {
-    path: '/cards/',
-    component: Cards
-  },
-  {
-    path: '/lists/',
-    component: Lists
-  },
-  {
-    path: '/contacts/',
-    component: Contacts
-  },
-  {
-    path: '/sortable/',
-    component: Sortable
-  },
-  {
-    path: '/swipeout/',
-    component: Swipeout
-  },
-  {
-    path: '/accordion/',
-    component: Accordion
-  },
-  {
-    path: '/grid/',
-    component: Grid
-  },
-  {
-    path: '/forms/',
-    component: Forms
-  },
-  {
-    path: '/smart-select/',
-    component: SmartSelect
-  },
-  {
-    path: '/chips/',
-    component: Chips
-  },
-  {
-    path: '/progressbar/',
-    component: Progressbar
-  },
-  {
-    path: '/preloader/',
-    component: Preloader
-  },
-  {
-    path: '/pull-to-refresh/',
-    component: PullToRefresh
-  },
-  {
-    path: '/infinite/',
-    component: InfiniteScroll
-  },
-  {
-    path: '/swiper/',
-    component: Swiper
-  },
-  {
-    path: '/messages/',
-    component: Messages
-  },
-  {
-    path: '/searchbar/',
-    component: Searchbar
-  },
-  {
-    path: '/tabs/',
-    component: Tabs
-  },
-  {
-    path: '/tabs-swipeable/',
-    component: TabsSwipeable
-  },
-  {
-    path: '/bars/',
-    component: Bars
-  },
-  {
-    path: '/bars-hide/',
-    component: BarsHide
-  },
-  {
-    path: '/bars-subnavbar/',
-    component: BarsSubnavbar
-  },
-  {
-    path: '/bars-tabbar/',
-    component: BarsTabbar
-  },
-  {
-    path: '/bars-tabbar-labels/',
-    component: BarsTabbarLabels
-  },
-  {
-    path: '/fab/',
-    component: Fab
-  },
-  {
-    path: '/fab-dial/',
-    component: FabDial
-  },
-  {
-    path: '/login-screen/',
-    component: LoginScreen
-  },
-  {
-    path: '/virtual-list/',
-    component: VirtualList
-  },
-  {
-    path: '/virtual-list-vue/',
-    component: VirtualListVue
-  },
-  {
-    path: '/photo-browser/',
-    component: PhotoBrowser
-  },
-  {
-    path: '/modals/',
-    component: Modals
-  },
-  {
-    path: '/user/:id/posts/:post_id/',
-    component: DynamicRoute
-  },
-  {
-    path: '/data-binding/',
-    component: DataBinding
-  },
-  {
-    path: '/data-binding-edit/',
-    component: DataBindingEdit
-  },
-  {
-    path: '/timeline-vertical/',
-    component: TimelineVertical
-  },
-  {
-    path: '/timeline-horizontal/',
-    component: TimelineHorizontal
-  },
-  {
-    path: '/timeline-calendar/',
-    component: TimelineCalendar
-  },
-  {
-    path: '/calendar/',
-    component: Calendar
-  },
-  {
-    path: '/data-table/',
-    component: DataTable
-  },
-  {
-    path: '/nested-routes/',
-    component: NestedRoutes
-  },
-  {
-    path: '/nested-routes/tabs/',
-    component: NestedRoutesTabs,
-    tabs: [
-      {
-        path: '/',
-        tabId: 'tab1',
-        component: Tab1
-      },
-      {
-        path: '/tab-2/',
-        tabId: 'tab2',
-        component: Tab2
-      },
-      {
-        path: '/tab-3/',
-        tabId: 'tab3',
-        routes: [
-          {
-            path: '/',
-            component: Tab3
-          },
-          {
-            path: '/alternate-content/',
-            component: Tab3AlternateContent
-          }
+
+export default [{
+        path: '/home/',
+        component: Home
+    },
+    {
+        path: '/test/',
+        component: Test
+    },
+    {
+        path: '/content-block/',
+        component: ContentBlock
+    },
+    {
+        path: '/cards/',
+        component: Cards
+    },
+    {
+        path: '/lists/',
+        component: Lists
+    },
+    {
+        path: '/contacts/',
+        component: Contacts
+    },
+    {
+        path: '/sortable/',
+        component: Sortable
+    },
+    {
+        path: '/swipeout/',
+        component: Swipeout
+    },
+    {
+        path: '/accordion/',
+        component: Accordion
+    },
+    {
+        path: '/grid/',
+        component: Grid
+    },
+    {
+        path: '/forms/',
+        component: Forms
+    },
+    {
+        path: '/smart-select/',
+        component: SmartSelect
+    },
+    {
+        path: '/chips/',
+        component: Chips
+    },
+    {
+        path: '/progressbar/',
+        component: Progressbar
+    },
+    {
+        path: '/preloader/',
+        component: Preloader
+    },
+    {
+        path: '/pull-to-refresh/',
+        component: PullToRefresh
+    },
+    {
+        path: '/infinite/',
+        component: InfiniteScroll
+    },
+    {
+        path: '/swiper/',
+        component: Swiper
+    },
+    {
+        path: '/messages/',
+        component: Messages
+    },
+    {
+        path: '/searchbar/',
+        component: Searchbar
+    },
+    {
+        path: '/tabs/',
+        component: Tabs
+    },
+    {
+        path: '/tabs-swipeable/',
+        component: TabsSwipeable
+    },
+    {
+        path: '/bars/',
+        component: Bars
+    },
+    {
+        path: '/bars-hide/',
+        component: BarsHide
+    },
+    {
+        path: '/bars-subnavbar/',
+        component: BarsSubnavbar
+    },
+    {
+        path: '/bars-tabbar/',
+        component: BarsTabbar
+    },
+    {
+        path: '/bars-tabbar-labels/',
+        component: BarsTabbarLabels
+    },
+    {
+        path: '/fab/',
+        component: Fab
+    },
+    {
+        path: '/fab-dial/',
+        component: FabDial
+    },
+    {
+        path: '/login-screen/',
+        component: LoginScreen
+    },
+    {
+        path: '/virtual-list/',
+        component: VirtualList
+    },
+    {
+        path: '/virtual-list-vue/',
+        component: VirtualListVue
+    },
+    {
+        path: '/photo-browser/',
+        component: PhotoBrowser
+    },
+    {
+        path: '/modals/',
+        component: Modals
+    },
+    {
+        path: '/user/:id/posts/:post_id/',
+        component: DynamicRoute
+    },
+    {
+        path: '/data-binding/',
+        component: DataBinding
+    },
+    {
+        path: '/data-binding-edit/',
+        component: DataBindingEdit
+    },
+    {
+        path: '/timeline-vertical/',
+        component: TimelineVertical
+    },
+    {
+        path: '/timeline-horizontal/',
+        component: TimelineHorizontal
+    },
+    {
+        path: '/timeline-calendar/',
+        component: TimelineCalendar
+    },
+    {
+        path: '/calendar/',
+        component: Calendar
+    },
+    {
+        path: '/data-table/',
+        component: DataTable
+    },
+    {
+        path: '/nested-routes/',
+        component: NestedRoutes
+    },
+    {
+        path: '/nested-routes/tabs/',
+        component: NestedRoutesTabs,
+        tabs: [{
+                path: '/',
+                tabId: 'tab1',
+                component: Tab1
+            },
+            {
+                path: '/tab-2/',
+                tabId: 'tab2',
+                component: Tab2
+            },
+            {
+                path: '/tab-3/',
+                tabId: 'tab3',
+                routes: [{
+                        path: '/',
+                        component: Tab3
+                    },
+                    {
+                        path: '/alternate-content/',
+                        component: Tab3AlternateContent
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  },
-  {
-    path: '/nested-routes/tabbar/',
-    component: NestedRoutesTabbar,
-    tabs: [
-      {
-        path: '/',
-        tabId: 'tab1',
-        component: TabbarTab1
-      },
-      {
-        path: '/tab-2/',
-        tabId: 'tab2',
-        component: TabbarTab2
-      },
-      {
-        path: '/tab-3/',
-        tabId: 'tab3',
-        routes: [
-          {
-            path: '/',
-            component: TabbarTab3
-          },
-          {
-            path: '/alternate-content/',
-            component: TabbarTab3AlternateContent
-          }
+    },
+    {
+        path: '/nested-routes/tabbar/',
+        component: NestedRoutesTabbar,
+        tabs: [{
+                path: '/',
+                tabId: 'tab1',
+                component: TabbarTab1
+            },
+            {
+                path: '/tab-2/',
+                tabId: 'tab2',
+                component: TabbarTab2
+            },
+            {
+                path: '/tab-3/',
+                tabId: 'tab3',
+                routes: [{
+                        path: '/',
+                        component: TabbarTab3
+                    },
+                    {
+                        path: '/alternate-content/',
+                        component: TabbarTab3AlternateContent
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 ];
