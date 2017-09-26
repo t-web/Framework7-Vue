@@ -3,7 +3,7 @@
     <f7-navbar back-link="Back" title="Infinite Scroll" sliding></f7-navbar>
 
     <f7-block>Scroll list down to load new items</f7-block>
-    <f7-block-title>Infinite Scroll</f7-block-title>
+    <f7-block-title>无限滚动</f7-block-title>
     <f7-list>
       <f7-list-item v-for="item in items" :title="item" :key="item"></f7-list-item>
     </f7-list>
